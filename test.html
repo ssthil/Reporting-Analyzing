@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="wrapper"></div>
+<script>
+function myData(arr) {
+    var out = "";
+    var i;
+    for(i = 0; i<arr.length; i++) {
+        out += '<div class="col-lg-3 col-sm-6"><div class="panel panel-default"><div class="panel-heading"><div class="title-small">' + arr[i].status + '</div></div><div class="panel-body"><h3>' + arr[i].count + '</h3><div class="under-lbl">' + arr[i].events+ '</div></div></div></div></div>';
+    }
+   document.getElementById("wrapper").innerHTML = out; 
+}
+</script>
+<script src="js/data.js"></script>
+</body>
+</html>

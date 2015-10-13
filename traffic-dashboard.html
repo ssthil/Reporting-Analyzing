@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reporting and Analyzing</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- body wrapper start-->
+	<div class="wrapper">
+		<div class="container">
+			<div class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<div class="navbar-brand">Report and Analytics</div>
+					</div>
+					<div id="top-navbar">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html">Overview</a></li>
+							<li class="active"><a href="#">Traffic Dashboard</a></li>
+							<li><a href="#">Web Activity Report</a></li>
+							<li><a href="#">Thread Dashboard</a></li>
+							<li><a href="#">URL Filtering Dashboard</a></li>
+							<li><a href="#">System Dashboard</a></li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- navbar closed -->
+		<div class="container">
+			<div class="page-header">
+				<h1>Traffic Dashboard</h1>
+			</div>
+			<div class="row" id="firstRow">
+				<div class="col-lg-6 col-sm-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="title">Bytes Transferred Over Time</div>
+						</div>
+						<div class="panel-body">
+							<div id="bytes_overtime"></div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<!-- container closed-->
+<script src="lib/jquery-2.1.3.min.js"></script>
+<script src="lib/highcharts.js"></script>
+<script src="js/script.js"></script>
+<script src="json/bytes-overtime.js"></script>
+</body>
+</html>
